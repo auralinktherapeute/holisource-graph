@@ -847,6 +847,9 @@ document.getElementById('st-coms').textContent=COMMUNITIES.length;
 //  EXTRA ACTIONS
 // ═══════════════════════════════════════════════════════
 
+function toggleCard(id){
+  document.getElementById(id).classList.toggle('collapsed');
+}
 function toggleLabels(){
   showLabels=!showLabels;
   Object.values(labelSprites).forEach(s=>s.visible=showLabels);
