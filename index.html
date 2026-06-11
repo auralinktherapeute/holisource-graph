@@ -183,19 +183,25 @@ canvas:active{cursor:grabbing}
 
 <!-- Panel gauche -->
 <div id="panel-left">
-  <div class="card">
-    <div class="card-title">Recherche</div>
-    <input id="search-input" type="text" placeholder="Rechercher un nœud...">
-    <div id="search-results"></div>
+  <div class="card" id="card-search">
+    <div class="card-title" onclick="toggleCard('card-search')">Recherche <span class="card-chevron">▾</span></div>
+    <div class="card-body">
+      <input id="search-input" type="text" placeholder="Rechercher un nœud...">
+      <div id="search-results"></div>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-title">Filtrer par domaine</div>
-    <div class="filter-row" id="filter-row"></div>
-    <button class="abtn" id="filter-all-btn">Tout afficher</button>
+  <div class="card" id="card-filter">
+    <div class="card-title" onclick="toggleCard('card-filter')">Filtrer par domaine <span class="card-chevron">▾</span></div>
+    <div class="card-body">
+      <div class="filter-row" id="filter-row"></div>
+      <button class="abtn" id="filter-all-btn">Tout afficher</button>
+    </div>
   </div>
-  <div class="card">
-    <div class="card-title">Légende</div>
-    <div id="legend-list"></div>
+  <div class="card" id="card-legend">
+    <div class="card-title" onclick="toggleCard('card-legend')">Légende <span class="card-chevron">▾</span></div>
+    <div class="card-body">
+      <div id="legend-list"></div>
+    </div>
   </div>
 </div>
 
