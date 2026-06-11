@@ -58,7 +58,8 @@ canvas:active{cursor:grabbing}
 
 .card{background:rgba(7,20,40,.9);border:1px solid var(--border);border-radius:16px;padding:13px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 8px 28px rgba(37,99,235,.1),inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .2s}
 .card:hover{border-color:var(--border-a)}
-.card-title{font-size:9px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-l);margin-bottom:9px;opacity:.8}
+.card-title{font-size:9px;text-transform:uppercase;letter-spacing:2px;color:var(--accent-l);margin-bottom:9px;opacity:.8;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;transition:opacity .15s}
+.card-title:hover{opacity:1}
 
 /* ── Search ── */
 #search-input{width:100%;padding:8px 12px;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:9px;color:var(--text);font-size:12px;outline:none;transition:all .2s}
